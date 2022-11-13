@@ -167,7 +167,7 @@ function App() {
 
       {/* Card */}
       {valor ? (
-        <div className="Card w-full max-w-[450px] max-h-[580px] overflow-auto shadow-xl rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border bg-gray-100 border-gray-100 py-6 px-2 lg:max-w-[950px] lg:max-h-[750px] xl:py-3 xl:max-w-[1250px]">
+        <div className="Card w-full max-w-[450px] max-h-[580px] overflow-auto shadow-xl rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border bg-gray-100 border-gray-100 py-6 px-2 lg:max-w-[950px] lg:max-h-[750px] xl:py-3 xl:max-w-[1250px] 2xl:max-w-[1100px]">
           
           {/* Card Top */}
           <div className="CardTop flex flex-col items-center ">
@@ -204,77 +204,77 @@ function App() {
                 <div className="grid grid-cols-2 text-[17px] w-full md:text-2xl lg:text-[30px] xl:text-[40px]">
                   <div className="flex flex-col ">
                     <div className="lg:flex lg:ml-8 ">
-                      {" "}
-                      <h2 className="mx-2 lg:self-center lg:mx-0 ">
+                      
+                      <h2 className="mx-2 md:ml-8 lg:self-center lg:mx-0 ">
                         Max: {valor.days[0].tempmax.toFixed(0)}
-                      </h2>{" "}
+                      </h2>
                       <img
                         className="hidden lg:block lg:h-24 lg:relative lg:-ml-8 "
                         src={termometro}
                         alt=""
-                      />{" "}
+                      />
                     </div>
 
                     <div className="lg:flex lg:ml-8">
-                      {" "}
-                      <h2 className="mx-2 lg:self-center lg:mx-0 ">
+                      
+                      <h2 className="mx-2 md:ml-8 lg:self-center lg:mx-0 ">
                         Min: {valor.days[0].tempmin.toFixed(0)}
-                      </h2>{" "}
+                      </h2>
                       <img
                         className="hidden lg:block lg:h-24 lg:relative lg:-ml-8 "
                         src={termometro}
                         alt=""
-                      />{" "}
+                      />
                     </div>
 
                     <div className="lg:flex lg:ml-8">
-                      {" "}
-                      <h2 className="mx-2 lg:self-center lg:mx-0 ">
-                        S. Termica:{" "}
+                      
+                      <h2 className="mx-2 md:ml-8 lg:self-center lg:mx-0 ">
+                        S. Termica:
                         {valor.currentConditions.feelslike.toFixed(0)}
-                      </h2>{" "}
+                      </h2>
                       <img
                         className="hidden lg:block lg:h-24 lg:relative lg:-ml-8 "
                         src={termometro}
                         alt=""
-                      />{" "}
+                      />
                     </div>
                   </div>
 
                   <div className="flex flex-col lg: ">
                     <div className="lg:flex lg:justify-center lg:h-[96px]">
-                      {" "}
+                      
                       <img
                         className="hidden lg:block lg:h-14 lg:w-12 lg:self-center lg:-ml-4 xl:-ml-24 "
                         src={visibilidad}
                         alt=""
-                      />{" "}
+                      />
                       <h2 className="lg:self-center lg:ml-2 ">
-                        Visibilidad:{" "}
+                        Visibilidad:
                         {valor.currentConditions.visibility.toFixed(0)}Km
                       </h2>
                     </div>
 
                     <div className="lg:flex">
-                      {" "}
+                      
                       <img
                         className="hidden lg:block lg:h-24 lg:relative  lg:self-center lg:-ml-7 "
                         src={humedad}
                         alt=""
-                      />{" "}
+                      />
                       <h2 className="lg:self-center lg:-ml-4">
-                        {" "}
+                        
                         Humedad: {valor.currentConditions.humidity.toFixed(0)}%
                       </h2>
                     </div>
 
                     <div className="lg:flex lg:mt-5">
-                      {" "}
+                      
                       <img
                         className="hidden lg:block lg:h-[58px] lg:self-center lg:-ml-1"
                         src={viento}
                         alt=""
-                      />{" "}
+                      />
                       <h2 className="lg:self-center ">
                         Viento: {valor.currentConditions.windspeed}Km
                       </h2>
