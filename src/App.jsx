@@ -149,13 +149,13 @@ function App() {
 
   return (
     <div
-      className="main w-full h-screen flex flex-col items-center justify-center px-4 lg:px-0 text-white bg-no-repeat bg-cover bg-center"
+      className="main w-full h-screen flex flex-col items-center justify-center px-4 lg:px-0  bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: `url(${backImg})` }}
     >
       <h1 className=" text-gray-800 text-4xl my-5 font-bold underline xl:text-6xl">
         Weather App
       </h1>
-      <div className=" flex justify-center w-full text-black m-5">
+      <div className=" flex justify-center w-full m-5">
         <input
           type="text"
           placeholder="Buscar Ciudad"
@@ -167,7 +167,7 @@ function App() {
 
       {/* Card */}
       {valor ? (
-        <div className="Card w-full max-w-[450px] max-h-[580px] overflow-auto shadow-xl rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border bg-gray-100 border-gray-100 py-6 px-2 lg:max-w-[950px] lg:max-h-[750px] xl:py-3 xl:max-w-[1250px] 2xl:max-w-[1100px]">
+        <div className="Card text-white w-full max-w-[450px] max-h-[580px] overflow-auto shadow-xl rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border bg-gray-100 border-gray-100 py-6 px-2 lg:max-w-[950px] lg:max-h-[750px] xl:py-3 xl:max-w-[1250px] 2xl:max-w-[1100px]">
           
           {/* Card Top */}
           <div className="CardTop flex flex-col items-center ">
@@ -275,7 +275,7 @@ function App() {
                         src={viento}
                         alt=""
                       />
-                      <h2 className="lg:self-center ">
+                      <h2 className=" lg:self-center ">
                         Viento: {valor.currentConditions.windspeed}Km
                       </h2>
                     </div>
@@ -297,7 +297,7 @@ function App() {
         </div>
       ) : (
         <div>
-          <h2 className="text-2xl font-semibold">Ingrese una Ciudad</h2>
+          <h2 className=" text-white text-2xl font-semibold">Ingrese una Ciudad</h2>
         </div>
       )}
     </div>
