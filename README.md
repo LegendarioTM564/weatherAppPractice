@@ -8,7 +8,7 @@ Aplicación web para consultar el pronostico del clima, en una ciudad especifica
 
 - Diseño Responsive.
 - Fecha y Hora actual de la ciudad seleccionada.
-- Cambio de imagen backgrounn segun la condición climatica.
+- Cambio de imagen background segun la condición climatica.
 - Cambio de icono segun la condición climatica.
 - Pronostico de los proximos 4 días.
 
