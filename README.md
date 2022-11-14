@@ -26,7 +26,7 @@ Aplicación web para consultar el pronostico del clima, en una ciudad especifica
 - [Visual Crossing-Api Weather](https://www.visualcrossing.com/weather-api)
 ## Screenshots
 
-[![inicio.png](https://i.postimg.cc/wvmXWfzx/inicio.png)](https://postimg.cc/tZ9nJz78)
+[![inicio.png](https://i.postimg.cc/rwMFfc3Z/inicio.png)](https://postimg.cc/QHY3tLXc)
 
 [![inico.png](https://i.postimg.cc/hPknJM48/inico.png)](https://postimg.cc/sv4qqYh1)
 
